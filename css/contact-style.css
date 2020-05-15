@@ -1,0 +1,75 @@
+div {
+    margin: 10px;
+}
+
+fieldset{
+    background-color: lightgray;
+}
+
+fieldset legend {
+    background-color: lightgray;
+}
+
+.header1 {
+    grid-area: header1;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.pic1 {
+    grid-area: pic1;
+    max-width: 100%;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;;
+    grid-area: form;
+}
+
+.contacted div {
+    margin: 1px;
+}
+
+.about div {
+    margin: 1px;
+}
+
+@media (min-width: 320px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr .25fr 1.5fr;
+        grid-template-areas: 
+            ".. .. .."
+            ".. header1 .."
+            ".. form ..";
+    }
+}
+
+@media (min-width: 768px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr .25fr 1.5fr;
+        grid-template-areas: 
+        "pic1 .."
+        "pic1 header1"
+        "pic1 form";
+    }
+}
+
+@media (min-width: 992px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr .25fr 1.5fr;
+        grid-template-areas:
+        "pic1 .."
+        "pic1 header1"
+        "pic1 form";
+    }
+}

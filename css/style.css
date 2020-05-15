@@ -1,0 +1,144 @@
+body{
+    background-color: #77acfa;
+}
+
+.header {
+    background-image: url("./images/header.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: middle;
+    text-align: center;
+    grid-area: header;
+    
+}
+
+.header h1 {
+    font-size: 75px;
+    color: #e13a3e;
+    text-shadow: 3px 2px 15px black;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: middle;
+    grid-area: nav;
+    margin: 10px;
+}
+
+.nav a {
+   border-radius: 15px;
+   border: 2px solid #0795C3;
+   background: #0795C3;
+   padding: 10px;
+}
+
+.upper {
+    
+    /*display: flex;*/
+    grid-area: upper;
+}
+
+.image {
+    width: 100%;
+}
+
+.lower {
+    min-height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: middle;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ".. .. .. .."
+        "img1 img2 img3 img4"
+        ".. .. .. ..";
+    grid-area: lower;
+}
+
+.lower div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    grid-area: img1;
+    
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+    grid-area: footer;
+}
+
+@media (min-width: 320px) {
+    .countainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .75fr .5fr 1.5fr 1fr .25fr;
+        grid-template-areas: 
+            ".. header .."
+            ".. nav .."
+            ".. upper .."
+            ".. lower .."
+            ".. footer ..";
+    }
+
+    .nav {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .countainer {
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;;
+        grid-template-rows: .75fr .5fr 1.5fr 1fr .25fr;
+        grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            ".. upper .."
+            ".. lower .."
+            ".. footer ..";
+    }
+
+    .nav {
+        font-size: 25px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .countainer {
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+        grid-template-rows: .75fr .5fr 1.5fr 1fr .25fr;
+        grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            ".. upper .."
+            ".. lower .."
+            ".. footer ..";
+    }
+
+    .nav {
+        font-size: 30px;
+    }
+}

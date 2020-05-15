@@ -1,0 +1,89 @@
+.container1 h1 {font-size: 50px;}
+.container1 h2 {font-size: 35px;}
+.container1 p {font-size: 25px;}
+
+.pic {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    grid-area: pic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.early {
+    grid-area: early;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.single {
+    grid-area: single;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.married {
+    grid-area: married;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (min-width: 320px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  .25fr 1fr .25fr .25fr .25fr;
+        grid-template-areas: 
+            ".. name .."
+            ".. pic .."
+            ".. early .."
+            ".. single .."
+            ".. married ..";
+    }
+}
+
+@media (min-width: 768px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr .25fr .5fr .5fr .5fr;
+        grid-template-areas: 
+            "pic .."
+            "pic name"
+            "pic early"
+            "pic single"
+            "pic married";
+    }
+}
+
+@media (min-width: 992px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  .25px .25fr .5fr .5fr .5fr;
+        grid-template-areas: 
+            "pic .."
+            "pic name"
+            "pic early"
+            "pic single"        
+            "pic married";
+    }

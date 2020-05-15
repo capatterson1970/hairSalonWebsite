@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact-style.css">
+    <script src="scripts.js"></script>
+    <title>Big Daddy's Barbershop</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Big Daddy's Barbershop</h1>
+        </header>
+        <nav class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./image.html">Gallery</a>
+            <a href="./news.html">News</a>
+            <a href="./contact.html">Contact Us</a>
+        </nav>
+        <main class="upper container1">
+            <div class="header1">
+                <h1>Contact Us</h1>
+            </div>
+            
+            <img class="pic1" src="./images/body3a.jpg" alt="Barbershop Photo" />
+    
+            <div class="form">
+                <form action="results.html" method="GET" enctype="multipart/form-data" >
+                  <fieldset>
+                    <!--<legend>Contact US</legend>-->
+                  <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" >
+                  </div>
+              
+                  <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                  </div>
+              
+                  <div class="comments">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" maxlength="500" minlength="20"></textarea>
+                  </div>
+              
+                  <div class="about">
+                    How did you hear about us? 
+                    <div>
+                      <input type="checkbox" name="tv" id="tv">
+                      <label for="tve">TV</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="radio" id="radio">
+                      <label for="radio">Radio</label>
+                    </div>
+                    <div>
+                     <input type="checkbox" name="friend" id="friend">
+                     <label for="friend">Friend</label>
+                    </div>
+                    <div>
+                     <input type="checkbox" name="ad" id="ad">
+                     <label for="ad">Media AD</label>
+                    </div>
+                  </div>
+              
+                  <div class="contacted">
+                    Do you wish to be contacted?
+                    <div>
+                     <input type="radio" name="contacted" id="yes" value="yes">
+                     <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                     <input type="radio" name="contacted" id="no" value="no">
+                     <label for="no">No</label>
+                    </div>
+                   </div>
+              
+                   <div class="date">
+                    <label for="date">Birthday Wish?</label>
+                    <input type="date" name="date" id="date" min="2020-05-01">
+                  </div>
+                  </fieldset>    
+                </form>
+            </div>
+        </main>
+        <section class="lower">
+
+        </section>
+        <footer class="footer">
+            <p>&copy; 2020 by Taurus13 Designs. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
